@@ -5,3 +5,5 @@ git add: Sube los archivos cuando se tienen una funcionalidad terminada.
 -Master: Rama principal la que está en la aplicación.
 -Dev: Rama clonada.
 -origin: el mismo Dev pero en GitHub.
+
+git status On branch main
