@@ -1,0 +1,87 @@
+body {
+    background-image: url("fondo1.jpg");
+    font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div.entradaTexto {
+    width: 100%;
+    list-style: none;
+}
+
+form.formulario {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    min-height: max-content;
+    min-width: max-content;
+    max-width: min-content;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(7, 27, 90);
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    resize: both;
+    width: 120px;
+    margin: auto;
+}
+
+img.icono {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+input.texto {
+    background-image: url('correo.jpg');
+    font-size: 20px;
+    width: 350px;
+    padding: 10px;
+    border: white;
+    vertical-align: middle;
+}
+
+input.boton {
+    border: none;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background: rgb(7, 27, 90);
+    padding: 15px 20px;
+    border: radius 5px;
+    cursor: pointer;
+}
+
+input.boton:hover {
+    background: cadetblue;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(7, 27, 90);
+    font-weight: 600;
+}
+
+.link:hover {
+    color: cadetblue;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
