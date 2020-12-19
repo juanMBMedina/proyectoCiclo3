@@ -1,0 +1,7 @@
+git init
+git clone: Ya existe un proyecto.
+git commit: Area de preparación
+git add: Sube los archivos cuando se tienen una funcionalidad terminada.
+-Master: Rama principal la que está en la aplicación.
+-Dev: Rama clonada.
+-origin: el mismo Dev pero en GitHub.
