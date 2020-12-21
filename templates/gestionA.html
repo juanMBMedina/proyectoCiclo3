@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilo1.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/estilo1.css">
+    <script type="text/javascript" src="../static/js/imagenes.js"></script>
     <title>Perfil Usuario</title>
 </head>
 
 <body class="pagina2">
     <header>
-        <img src="logo.jpg" class="logo">
+        <img src="../static/images/logo.jpg" class="logo">
         <h1>:::Gestión de imágenes::: <br> Social Network di immagini</h1>
     </header>
     <form action="" class="formulario2">
@@ -18,22 +19,22 @@
             <tr>
                 <th>
                     <div class="entradaTexto">
-                        <img src="cargar.jpeg" class="icono">
+                        <img src="../static/images/cargar.jpeg" class="icono">
                         <input type="submit" class="boton" value="Cargar Imagen">
                     </div>
                 </th>
                 <th>
                     <div class="entradaTexto ">
-                        <img src="buscar.jpeg" class="icono">
+                        <img src="../static/images/buscar.jpeg" class="icono">
                         <a href="gestionB.html">
                             <input type="button" class="boton" value="Buscar Imagen">
                         </a>
                     </div>
                 </th>
             </tr>
-            <tr>
-                <img src="" alt="">
-            </tr>
+        </table>
+        <div id="divImagen" align="center"></div>
+        <table align="center">
             <tr>
                 <th>Nombre: </th>
                 <th><input type="text"></th>
@@ -44,9 +45,10 @@
             </tr>
             <tr>
                 <th>Cargar: </th>
-                <th><input type="file"></th>
+                <th><input type="file" id="cargarArchivo" onchange="cargarImagen();"></th>
             </tr>
         </table>
+
     </form>
     <footer>
         <p>¿Cerrar sesión? <a class="link " href="inicio.html ">Salir</a></p>

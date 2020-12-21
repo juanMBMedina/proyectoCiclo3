@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilo1.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/estilo1.css">
+    <script type="text/javascript" src="/static/js/validaciones.js"></script>
     <title>Recuperar Clave</title>
 </head>
 
 <body class="pagina1">
     <header>
         <h1>:::Recuperar Clave:::</h1>
-        <img src="logo.jpg" class="logo">
+        <img src="../static/images/logo.jpg" class="logo">
         <h2>social network di immagini</h2>
     </header>
-    <form action="" class=formulario1>
+    <form action="" class=formulario1 onsubmit="validarCorreo();">
         <div class="entradaTexto">
-            <img src="clave.jpg" class="icono">
-            <input type="password" class="texto" name="clave" id="clave" placeholder="Ingrese la contraseña:">
+            <img src="../static/images/correo.jpg" class="icono">
+            <input type="email" class="texto" name="correo" id="correo" placeholder="Ingrese su correo:">
         </div>
         <input type="submit" class="boton" value="Recuperar Clave">
     </form>
