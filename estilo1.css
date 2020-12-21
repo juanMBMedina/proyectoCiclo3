@@ -1,5 +1,13 @@
-body {
+body.pagina1 {
     background-image: url("fondo1.jpg");
+    font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body.pagina2 {
+    background-image: url("fondo2.jpg");
     font-family: 'Times New Roman', Times, serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,7 +19,7 @@ div.entradaTexto {
     list-style: none;
 }
 
-form.formulario {
+form.formulario1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -19,6 +27,15 @@ form.formulario {
     min-height: max-content;
     min-width: max-content;
     max-width: min-content;
+}
+
+form.formulario2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-height: max-content;
+    min-width: max-content;
 }
 
 h1 {
