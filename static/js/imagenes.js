@@ -1,6 +1,7 @@
 function cargarImagen() {
     var inputFile = document.getElementById('cargarArchivo').files[0].name;
     var imagen = document.createElement('img');
+    alert(inputFile);
     imagen.src = "../static/images/".concat(inputFile);
     imagen.setAttribute('width', 250);
     imagen.setAttribute('heigt', 250);

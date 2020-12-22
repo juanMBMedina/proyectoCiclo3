@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../static/css/estilo1.css">
-    <script type="text/javascript" src="/static/js/validaciones.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/estilo1.css')}}">
+    <script type="text/javascript" src="{{url_for('static', filename='js/validaciones.js')}}"></script>
     <title>Registro</title>
 </head>
 
 <body class="pagina1">
     <header>
         <h1>:::Registrar:::</h1>
-        <img src="../static/images/logo.jpg" class="logo">
+        <img src="{{url_for('static', filename='images/logo.jpg')}}" class="logo">
         <h2>social network di immagini</h2>
     </header>
     <form action="" class=formulario1 onsubmit="validarInfo();">
@@ -21,17 +21,17 @@
             <input type="text" class="texto" name="nombre" id="nombre" placeholder="Ingrese su Usuario:">
         </div>
         <div class="entradaTexto">
-            <img src="../static/images/correo.jpg" class="icono">
+            <img src="{{url_for('static', filename='images/correo.jpg')}}" class="icono">
             <input type="email" class="texto" name="correo" id="correo" placeholder="Ingrese Correo:">
         </div>
         <div class="entradaTexto">
-            <img src="../static/images/clave.jpg" class="icono" onmouseover="mostrarPassword();" onmouseout="ocultarPassword();">
+            <img src="{{url_for('static', filename='images/clave.jpg')}}" class="icono" onmouseover="mostrarPassword();" onmouseout="ocultarPassword();">
             <input type="password" class="texto" name="clave" id="clave" placeholder="Ingrese la contraseña:">
         </div>
         <input type="submit" class="boton" value="Registrar">
     </form>
     <footer>
-        <p>¿Ya tienes un usuario? <a class="link" href="inicio.html">Iniciar sesión</a></p>
+        <p>¿Ya tienes un usuario? <a class="link" href="/inicio/">Iniciar sesión</a></p>
     </footer>
 </body>
 

@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../static/css/estilo1.css">
-    <script type="text/javascript" src="../static/js/imagenes.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/estilo1.css')}}">
+    <script type="text/javascript" src="{{url_for('static', filename='js/imagenes.js')}}"></script>
     <title>Perfil Usuario</title>
 </head>
 
 <body class="pagina2">
     <header>
-        <img src="../static/images/logo.jpg" class="logo">
+        <img src="{{url_for('static', filename='images/logo.jpg')}}" class="logo">
         <h1>:::Gestión de imágenes::: <br> Social Network di immagini</h1>
     </header>
     <form action="" class="formulario2">
@@ -19,14 +19,14 @@
             <tr>
                 <th>
                     <div class="entradaTexto">
-                        <img src="../static/images/cargar.jpeg" class="icono">
+                        <img src="{{url_for('static', filename='images/cargar.jpeg')}}" class="icono">
                         <input type="submit" class="boton" value="Cargar Imagen">
                     </div>
                 </th>
                 <th>
                     <div class="entradaTexto ">
-                        <img src="../static/images/buscar.jpeg" class="icono">
-                        <a href="gestionB.html">
+                        <img src="{{url_for('static', filename='images/buscar.jpeg')}}" class="icono">
+                        <a href="/gestionB/">
                             <input type="button" class="boton" value="Buscar Imagen">
                         </a>
                     </div>
@@ -51,7 +51,7 @@
 
     </form>
     <footer>
-        <p>¿Cerrar sesión? <a class="link " href="inicio.html ">Salir</a></p>
+        <p>¿Cerrar sesión? <a class="link " href="/inicio/">Salir</a></p>
     </footer>
 </body>
 

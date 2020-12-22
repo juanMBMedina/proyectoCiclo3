@@ -4,31 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../static/css/estilo1.css">
-    <script type="text/javascript" src="../static/js/validaciones.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/estilo1.css')}}">
+    <script type="text/javascript" src="{{url_for('static', filename='js/validaciones.js')}}"></script>
     <title>Inicio</title>
 </head>
 
 <body class="pagina1">
     <header>
         <h1>:::Inicio:::</h1>
-        <img src="../static/images/logo.jpg" class="logo">
+        <img src="{{url_for('static', filename='images/logo.jpg')}}" class="logo">
         <h2>social network di immagini</h2>
     </header>
-    <form action="" class=formulario1 onsubmit="validarInfo();">
+    <form action="/gestionA/" method="POST" class=formulario1 onsubmit="validarInfo();">
         <div class="entradaTexto">
-            <img src="../static/images/correo.jpg" class="icono">
+            <img src="{{url_for('static', filename='images/correo.jpg')}}" class="icono">
             <input type="email" class="texto" name="correo" id="correo" placeholder="Ingrese Correo:">
         </div>
         <div class="entradaTexto">
-            <img src="../static/images/clave.jpg" class="icono" onmouseover="mostrarPassword();" onmouseout="ocultarPassword();">
+            <img src="{{url_for('static', filename='images/clave.jpg')}}" class="icono" onmouseover="mostrarPassword();" onmouseout="ocultarPassword();">
             <input type="password" class="texto" name="clave" id="clave" placeholder="Ingrese la contraseña:">
         </div>
         <input type="submit" class="boton" value="Iniciar Sesión">
     </form>
     <footer>
-        <p>¿Aún no tienes una cuenta? <a class="link" href="Registro.html">Regístrate</a></p>
-        <p>¿Olvidaste tu contraseña? <a class="link" href="Recuperar_clave.html">Recupera tu clave</a></p>
+        <p>¿Aún no tienes una cuenta? <a class="link" href="/registro/">Regístrate</a></p>
+        <p>¿Olvidaste tu contraseña? <a class="link" href="/recuperar/">Recupera tu clave</a></p>
     </footer>
 </body>
 
